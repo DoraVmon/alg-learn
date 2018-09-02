@@ -64,8 +64,13 @@ TreeNode* find_successor(TreeNode *node, TreeNode *&parent){
 class Solution {
 public:
     TreeNode* deleteNode(TreeNode* root, int key) {
+<<<<<<< HEAD
 		TreeNode* parent = NULL;
 		TreeNode* node = NULL;
+=======
+		TreeNode* parent;
+		TreeNode* node;
+>>>>>>> add leetcode 450
 		if(NULL == (node = BST_search(root, key, parent))) {
 			return root;
 		}
