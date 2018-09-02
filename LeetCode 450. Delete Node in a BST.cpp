@@ -64,8 +64,8 @@ TreeNode* find_successor(TreeNode *node, TreeNode *&parent){
 class Solution {
 public:
     TreeNode* deleteNode(TreeNode* root, int key) {
-		TreeNode* parent;
-		TreeNode* node;
+		TreeNode* parent = NULL;
+		TreeNode* node = NULL;
 		if(NULL == (node = BST_search(root, key, parent))) {
 			return root;
 		}
